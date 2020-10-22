@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="44225" started-at="2020-10-22T08:24:31 IST" finished-at="2020-10-22T08:25:15 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="44225" started-at="2020-10-22T08:24:31 IST" finished-at="2020-10-22T08:25:15 IST">
+      <class name="testCases.POMDP">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.POMDP@11438d26]" name="setup" is-config="true" duration-ms="4796" started-at="2020-10-22T08:24:31 IST" finished-at="2020-10-22T08:24:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="google()[pri:1, instance:testCases.POMDP@11438d26]" name="google" duration-ms="19200" started-at="2020-10-22T08:24:36 IST" finished-at="2020-10-22T08:24:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+        <test-method status="PASS" signature="homePage()[pri:2, instance:testCases.POMDP@11438d26]" name="homePage" duration-ms="19542" started-at="2020-10-22T08:24:55 IST" depends-on-methods="testCases.POMDP.google" finished-at="2020-10-22T08:25:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:testCases.POMDP@11438d26]" name="custdetailsPage" duration-ms="2" started-at="2020-10-22T08:25:15 IST" data-provider="custDetails" finished-at="2020-10-22T08:25:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Cobra Khan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9005457337]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Harshad@mehta.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dharavi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[600092]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Python]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[678901]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- custdetailsPage -->
+        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:testCases.POMDP@11438d26]" name="custdetailsPage" duration-ms="1" started-at="2020-10-22T08:25:15 IST" data-provider="custDetails" finished-at="2020-10-22T08:25:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anaconda Khan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9005457337]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Harshad@mehta.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dharavi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[600091]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Python]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[678901]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- custdetailsPage -->
+        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:testCases.POMDP@11438d26]" name="custdetailsPage" duration-ms="2" started-at="2020-10-22T08:25:15 IST" data-provider="custDetails" finished-at="2020-10-22T08:25:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Viper Khan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9005457337]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Harshad@mehta.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dharavi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[600093]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Python]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[678901]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- custdetailsPage -->
+      </class> <!-- testCases.POMDP -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
