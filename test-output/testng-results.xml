@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56882" started-at="2020-10-23T12:13:35 IST" finished-at="2020-10-23T12:14:32 IST">
+  <suite name="Default suite" duration-ms="52953" started-at="2020-10-23T12:37:03 IST" finished-at="2020-10-23T12:37:56 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="56882" started-at="2020-10-23T12:13:35 IST" finished-at="2020-10-23T12:14:32 IST">
+    <test name="Default test" duration-ms="52953" started-at="2020-10-23T12:37:03 IST" finished-at="2020-10-23T12:37:56 IST">
       <class name="testCases.POMDP">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.POMDP@59e5ddf]" name="setup" is-config="true" duration-ms="7924" started-at="2020-10-23T12:13:35 IST" finished-at="2020-10-23T12:13:43 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.POMDP@11438d26]" name="setup" is-config="true" duration-ms="5635" started-at="2020-10-23T12:37:03 IST" finished-at="2020-10-23T12:37:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="google()[pri:1, instance:testCases.POMDP@59e5ddf]" name="google" duration-ms="20116" started-at="2020-10-23T12:13:43 IST" finished-at="2020-10-23T12:14:03 IST">
+        <test-method status="PASS" signature="google()[pri:1, instance:testCases.POMDP@11438d26]" name="google" duration-ms="21849" started-at="2020-10-23T12:37:09 IST" finished-at="2020-10-23T12:37:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- google -->
-        <test-method status="PASS" signature="homePage()[pri:2, instance:testCases.POMDP@59e5ddf]" name="homePage" duration-ms="27536" started-at="2020-10-23T12:14:03 IST" depends-on-methods="testCases.POMDP.google" finished-at="2020-10-23T12:14:30 IST">
+        <test-method status="PASS" signature="homePage()[pri:2, instance:testCases.POMDP@11438d26]" name="homePage" duration-ms="24529" started-at="2020-10-23T12:37:31 IST" depends-on-methods="testCases.POMDP.google" finished-at="2020-10-23T12:37:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:testCases.POMDP@59e5ddf]" name="custdetailsPage" duration-ms="3" started-at="2020-10-23T12:14:32 IST" data-provider="getCellData" finished-at="2020-10-23T12:14:32 IST">
+        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testCases.POMDP@11438d26]" name="custdetailsPage" duration-ms="1" started-at="2020-10-23T12:37:56 IST" data-provider="custDetails" finished-at="2020-10-23T12:37:56 IST">
           <params>
             <param index="0">
               <value>
@@ -65,7 +65,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- custdetailsPage -->
-        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:testCases.POMDP@59e5ddf]" name="custdetailsPage" duration-ms="2" started-at="2020-10-23T12:14:32 IST" data-provider="getCellData" finished-at="2020-10-23T12:14:32 IST">
+        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testCases.POMDP@11438d26]" name="custdetailsPage" duration-ms="1" started-at="2020-10-23T12:37:56 IST" data-provider="custDetails" finished-at="2020-10-23T12:37:56 IST">
           <params>
             <param index="0">
               <value>
@@ -111,7 +111,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- custdetailsPage -->
-        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:testCases.POMDP@59e5ddf]" name="custdetailsPage" duration-ms="2" started-at="2020-10-23T12:14:32 IST" data-provider="getCellData" finished-at="2020-10-23T12:14:32 IST">
+        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testCases.POMDP@11438d26]" name="custdetailsPage" duration-ms="3" started-at="2020-10-23T12:37:56 IST" data-provider="custDetails" finished-at="2020-10-23T12:37:56 IST">
           <params>
             <param index="0">
               <value>

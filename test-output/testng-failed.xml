@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.POMDP">
+      <class name="testCases.POMDP2">
         <methods>
+          <include name="setup"/>
           <include name="google"/>
           <include name="homePage"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- testCases.POMDP -->
+      </class> <!-- testCases.POMDP2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
