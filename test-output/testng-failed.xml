@@ -5,7 +5,8 @@
     <classes>
       <class name="testCases.POMDP">
         <methods>
-          <include name="myTest"/>
+          <include name="google"/>
+          <include name="homePage"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.POMDP -->

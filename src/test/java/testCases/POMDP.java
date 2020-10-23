@@ -19,6 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObject.CustDetailsPage;
 import pageObject.GooglePage;
 import pageObject.HomePage;
+import utilityFiles.ExcelClass;
 
 public class POMDP {
 
@@ -62,6 +63,7 @@ public class POMDP {
 		 hp.displayPriceandSelect7th();
 	}
 	
+/*	
 	@DataProvider(name="custDetails")
 	public Object[][] dataEntry() throws IOException
 	{
@@ -104,5 +106,17 @@ public class POMDP {
         System.out.println("Passed Parameter Is : " + val7);
         System.out.println("Passed Parameter Is : " + val8);
     }
-
+*/
+	@Test (dataProvider = "getCellData",dataProviderClass = ExcelClass.class,priority=5)
+    public void custdetailsPage (String val,String val2,String val3,String val4,String val5,String val6,String val7,String val8) {
+        System.out.println("Passed Parameter Is : " + val);
+        System.out.println("Passed Parameter Is : " + val2);
+        System.out.println("Passed Parameter Is : " + val3);
+        System.out.println("Passed Parameter Is : " + val4);
+        System.out.println("Passed Parameter Is : " + val5);
+        System.out.println("Passed Parameter Is : " + val6);
+        System.out.println("Passed Parameter Is : " + val7);
+        System.out.println("Passed Parameter Is : " + val8);
+    }
+	
 }
