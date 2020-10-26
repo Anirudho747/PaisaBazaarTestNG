@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52953" started-at="2020-10-23T12:37:03 IST" finished-at="2020-10-23T12:37:56 IST">
+  <suite name="Default suite" duration-ms="26048" started-at="2020-10-24T13:24:24 IST" finished-at="2020-10-24T13:24:50 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52953" started-at="2020-10-23T12:37:03 IST" finished-at="2020-10-23T12:37:56 IST">
-      <class name="testCases.POMDP">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.POMDP@11438d26]" name="setup" is-config="true" duration-ms="5635" started-at="2020-10-23T12:37:03 IST" finished-at="2020-10-23T12:37:09 IST">
+    <test name="Default test" duration-ms="26048" started-at="2020-10-24T13:24:24 IST" finished-at="2020-10-24T13:24:50 IST">
+      <class name="testCases.POMDP2">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.POMDP2@536aaa8d]" name="setup" is-config="true" duration-ms="4838" started-at="2020-10-24T13:24:24 IST" finished-at="2020-10-24T13:24:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="google()[pri:1, instance:testCases.POMDP@11438d26]" name="google" duration-ms="21849" started-at="2020-10-23T12:37:09 IST" finished-at="2020-10-23T12:37:31 IST">
+        <test-method status="PASS" signature="google()[pri:1, instance:testCases.POMDP2@536aaa8d]" name="google" duration-ms="6747" started-at="2020-10-24T13:24:29 IST" finished-at="2020-10-24T13:24:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- google -->
-        <test-method status="PASS" signature="homePage()[pri:2, instance:testCases.POMDP@11438d26]" name="homePage" duration-ms="24529" started-at="2020-10-23T12:37:31 IST" depends-on-methods="testCases.POMDP.google" finished-at="2020-10-23T12:37:55 IST">
+        <test-method status="PASS" signature="homePage()[pri:2, instance:testCases.POMDP2@536aaa8d]" name="homePage" duration-ms="13172" started-at="2020-10-24T13:24:36 IST" depends-on-methods="testCases.POMDP2.google" finished-at="2020-10-24T13:24:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testCases.POMDP@11438d26]" name="custdetailsPage" duration-ms="1" started-at="2020-10-23T12:37:56 IST" data-provider="custDetails" finished-at="2020-10-23T12:37:56 IST">
+        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testCases.POMDP2@536aaa8d]" name="custdetailsPage" duration-ms="2" started-at="2020-10-24T13:24:50 IST" data-provider="getCellData" finished-at="2020-10-24T13:24:50 IST">
           <params>
             <param index="0">
               <value>
@@ -65,7 +65,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- custdetailsPage -->
-        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testCases.POMDP@11438d26]" name="custdetailsPage" duration-ms="1" started-at="2020-10-23T12:37:56 IST" data-provider="custDetails" finished-at="2020-10-23T12:37:56 IST">
+        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testCases.POMDP2@536aaa8d]" name="custdetailsPage" duration-ms="2" started-at="2020-10-24T13:24:50 IST" data-provider="getCellData" finished-at="2020-10-24T13:24:50 IST">
           <params>
             <param index="0">
               <value>
@@ -111,7 +111,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- custdetailsPage -->
-        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testCases.POMDP@11438d26]" name="custdetailsPage" duration-ms="3" started-at="2020-10-23T12:37:56 IST" data-provider="custDetails" finished-at="2020-10-23T12:37:56 IST">
+        <test-method status="PASS" signature="custdetailsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:testCases.POMDP2@536aaa8d]" name="custdetailsPage" duration-ms="2" started-at="2020-10-24T13:24:50 IST" data-provider="getCellData" finished-at="2020-10-24T13:24:50 IST">
           <params>
             <param index="0">
               <value>
@@ -157,7 +157,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- custdetailsPage -->
-      </class> <!-- testCases.POMDP -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.POMDP2@536aaa8d]" name="tearDown" is-config="true" duration-ms="436" started-at="2020-10-24T13:24:50 IST" finished-at="2020-10-24T13:24:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.POMDP2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class CustDetailsPage {
 
 public WebDriver driver;
+
 	
 	@FindBy(xpath="//h1//following::input[@name='name']")
 	WebElement Name;

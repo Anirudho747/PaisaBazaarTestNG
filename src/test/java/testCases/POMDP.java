@@ -19,6 +19,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObject.CustDetailsPage;
 import pageObject.GooglePage;
 import pageObject.HomePage;
+import utilityFiles.Cnfgrtn;
 import utilityFiles.ExcelClass;
 
 public class POMDP {
@@ -27,6 +28,8 @@ public class POMDP {
 	public GooglePage gp;
 	public HomePage hp;
 	public CustDetailsPage cdp;
+	public Cnfgrtn cnfgr = new Cnfgrtn();
+	
 	String path= null;
 	
 	@BeforeClass
@@ -39,17 +42,17 @@ public class POMDP {
 		driver.manage().window().maximize();
 	}
 	
-	@Test(priority=1)
+	@Test
 	public void google() throws InterruptedException
 	{
-		driver.get("https://www.google.com/");
+		driver.get(cnfgr.getURL());
 		gp = new GooglePage(driver);
 		gp.enterText();
 		gp.displayEntries();
 		gp.clickLink();
 	}
 	
-	@Test(priority=2,dependsOnMethods= {"google"})
+	@Test
 	public void homePage() throws InterruptedException
 	{
 		 hp = new HomePage(driver);
@@ -95,8 +98,8 @@ public class POMDP {
 		return newA;
 	}
 	
-	@Test (dataProvider = "custDetails",priority=3)
-    public void custdetailsPage (String val,String val2,String val3,String val4,String val5,String val6,String val7,String val8) {
+	@Test
+	public void custdetailsPage (String val,String val2,String val3,String val4,String val5,String val6,String val7,String val8) {
         System.out.println("Passed Parameter Is : " + val);
         System.out.println("Passed Parameter Is : " + val2);
         System.out.println("Passed Parameter Is : " + val3);

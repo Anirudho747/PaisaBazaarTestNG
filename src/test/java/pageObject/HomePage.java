@@ -7,10 +7,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilityFiles.Cnfgrtn;
+
 
 public class HomePage {
 
 	public WebDriver driver;
+	public Cnfgrtn cnfgr = new Cnfgrtn();
 
 	@FindBy(xpath="//input[@placeholder='Enter Your Bike Number (eg. DL1SB1234)']")
 	WebElement Vehicle_nmbr;
@@ -44,7 +47,8 @@ public class HomePage {
 	public void type_VNumber()
 	{
 		Vehicle_nmbr.clear();
-		Vehicle_nmbr.sendKeys("TN22HB4858");
+	//	Vehicle_nmbr.sendKeys("TN22HB4858");
+		Vehicle_nmbr.sendKeys(cnfgr.getVehicleNumber());
 		Vehicle_nmbr.sendKeys(Keys.ENTER);
 	}
 	

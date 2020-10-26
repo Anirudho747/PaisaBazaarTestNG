@@ -4,22 +4,32 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObject.CustDetailsPage;
 import pageObject.GooglePage;
 import pageObject.HomePage;
+import utilityFiles.Cnfgrtn;
 import utilityFiles.ExcelClass;
+import utilityFiles.ScrnSht;
 
 public class POMDP2 {
 
+	String path= null;
 	public WebDriver driver;
 	public GooglePage gp;
 	public HomePage hp;
 	public CustDetailsPage cdp;
-	String path= null;
+	public Cnfgrtn cnfgr = new Cnfgrtn();
+	public ScrnSht ss = new ScrnSht();
+	public ExtentReports report;
+	public ExtentTest logger;
 	
 	@BeforeClass
 	public void setup()
@@ -29,12 +39,18 @@ public class POMDP2 {
 		driver.manage().timeouts().implicitlyWait(250, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(160, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		String repsrc = "./Reports/"+ss.getTime()+"extentreport.html";
+		ExtentHtmlReporter ehr = new ExtentHtmlReporter(repsrc);
+		report = new ExtentReports();
+		report.attachReporter(ehr);
+		logger = report.createTest("POMDP2");   
 	}
 	
 	@Test(priority=1)
 	public void google() throws InterruptedException
 	{
-		driver.get("https://www.google.com/");
+		//driver.get("https://www.google.com/");
+		driver.get(cnfgr.getURL());
 		gp = new GooglePage(driver);
 		gp.enterText();
 		gp.displayEntries();
@@ -66,5 +82,10 @@ public class POMDP2 {
         System.out.println("Passed Parameter Is : " + val7);
         System.out.println("Passed Parameter Is : " + val8);
     }
-
+	
+	@AfterClass
+	public void tearDown()
+	{
+	ss.takePic(driver);
+	}	
 }

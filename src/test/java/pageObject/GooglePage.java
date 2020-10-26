@@ -8,9 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilityFiles.Cnfgrtn;
+
 public class GooglePage {
 
 	public WebDriver driver;
+	public Cnfgrtn cnfgr = new Cnfgrtn();
 
 	@FindBy(name="q")
 	WebElement SrchBox;
@@ -29,7 +32,7 @@ public class GooglePage {
 	public void enterText()
 	{
 		SrchBox.clear();
-		SrchBox.sendKeys("policy bazaar for insurance renewal for scooty pep");
+		SrchBox.sendKeys(cnfgr.getSrchString());
 	}
 	
 	public void displayEntries() throws InterruptedException
